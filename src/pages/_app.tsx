@@ -12,7 +12,7 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
 }
 
 
-export default function Afrikobo({ Component, pageProps: { session, ...pageProps } }: AppProps<{ session: Session }>) {
+export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps<{ session: Session }>) {
     const theme = useTheme()
     return <>
         <SessionProvider session={session}>

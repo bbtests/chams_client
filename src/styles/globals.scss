@@ -90,3 +90,24 @@ a {
     color-scheme: dark;
   }
 }
+
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// input:-webkit-autofill:active {
+//   -webkit-box-shadow: 0 0 0 30px white inset !important;
+// }
+
+// input:-webkit-autofill {
+//   -webkit-text-fill-color: #000 !important;
+// }
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
