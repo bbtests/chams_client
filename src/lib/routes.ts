@@ -5,7 +5,7 @@ const routes = {
   view: "/view",
   auth: {
     login: "/auth/login",
-    logout: "/auth/logout",
+    logout: "/api/auth/logout",
     signup: "/auth/signup",
   },
   dashboard: {

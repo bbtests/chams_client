@@ -1,5 +1,6 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth, { NextAuthOptions } from "next-auth";
+import routes from "@/lib/routes";
 export const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt",
@@ -27,6 +28,9 @@ export const authOptions: NextAuthOptions = {
   },
   events: {
     async signOut({ token }) { },
+  },
+  pages: {
+    signOut: routes.auth.logout,
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
